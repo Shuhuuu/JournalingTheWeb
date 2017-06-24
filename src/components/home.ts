@@ -13,7 +13,7 @@ function fetchNews(): Promise<NewsApi> {
     // Returns a promise object
     return m.request({
         method: "GET",
-        url: "/api/v0/news"
+        url: "/news/nachrichten.json"
     });
 }
 
@@ -58,7 +58,7 @@ function view(ctrl) {
 
 <div class="cf">
   <div class="fl w-100 w-20-ns tc pv5 bg-black-05">
-    <h1>Nachrichten</h1>
+    <h1 class="f1">Nachrichten</h1>
         { renderNews(news) }
   </div>
   <div class="fl w-100 w-20-ns tc pv5 bg-black-10">

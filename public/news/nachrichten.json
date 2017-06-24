@@ -1,0 +1,7 @@
+{
+    "news": [
+      {"headline": "This is a news headline", "body": "..."},
+      {"headline": "This is another news headline", "body": "Nice"},
+      {"headline": "Another one", "body": "Perfect"}
+    ]
+}
