@@ -38,12 +38,9 @@ function renderNews(newsItems: NewsItem[]) {
     return renderedNews;
 }
 
-function view(ctrl) {
-    let news: NewsItem[] = ctrl.news().news; // this waits until the data becomes available
 
-    return (
-    <div>
-<nav class="db dt-l w-100 border-box pa3 ph5-l">
+function renderHeader() {
+    return <nav class="db dt-l w-100 border-box pa3 ph5-l">
   <a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="#" title="Home">
     <img src="http://tachyons.io/img/logo.jpg" class="dib w2 h2 br-100" alt="Site Name" />
   </a>
@@ -54,9 +51,11 @@ function view(ctrl) {
     <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="#" title="Press">Press</a>
     <a class="link dim dark-gray f6 f5-l dib" href="#" title="Contact">Contact</a>
   </div>
-</nav>
+  </nav>;
+}
 
-<div class="cf">
+function renderBody(news) {
+    return <div class="cf">
   <div class="fl w-100 w-20-ns tc pv5 bg-black-05">
     <h1 class="f1">Nachrichten</h1>
         { renderNews(news) }
@@ -73,9 +72,27 @@ function view(ctrl) {
   <div class="fl w-100 w-20-ns tc pv5 bg-black-05">
     Unterhaltung
   </div>
-</div>
-</div>
-    );
+</div>;
+}
+
+function renderNewsticker(newsItems: NewsItem[]) {
+    var text = "";
+    for (let item of newsItems) {
+        text = text + "+++" + item.headline;
+    }
+   
+    return <marquee>{ text }</marquee>;
+}
+
+function view(ctrl) {
+    let news: NewsItem[] = ctrl.news().news; // this waits until the data becomes available
+
+    return (
+    <div>
+      { renderHeader() }
+      { renderNewsticker(news) }
+      { renderBody(news) }
+    </div>);
 }
 
 export const Home = { controller, view };
