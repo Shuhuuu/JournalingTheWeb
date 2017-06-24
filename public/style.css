@@ -1,14 +1,87 @@
-/* 
- */
 
-table.mytable {
-    border: 1px solid grey;
+@font-face {
+    font-family: tendon;
+    src: url(tendon4.ttf);
 }
 
-table.mytable td {
-    padding: 5px;
-}
 
-table.mytable tr.found > td {
-    border: 2px solid red;
+div {
+    font-family: tendon;
 }
+h1{
+    font-family: tendon;
+    text-align: center;
+    }
+hr{
+    background-color: black;
+    border-color: black;
+    border:3;
+    }
+
+button {
+    font-family: tendon;
+    background-color: white;
+    color: black;
+    margin: 10;
+    padding: 10;
+    border: 1px solid;
+}
+.Spalten{
+    font-family: tendon;
+
+    margin:20px;
+    }
+.head{
+    text-align: center;
+}
+.window1, .window2, .window3, .window4, .window5{
+    width: 19%;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+.window1{
+    font-family: tendon;
+    text-align: left;
+    color: black;
+    height: auto;
+    border:auto;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    
+
+}
+.window2{
+    font-family: tendon;
+    text-align: left;
+    color: black;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    }
+.window3{
+    font-family: tendon;
+    text-align: left;
+    color: black;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    }
+.window4{
+    font-family: tendon;
+    text-align: left;
+    color: black;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    }
+
+.window5{
+    font-family: tendon;
+    text-align: left;
+    color: black;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    }
