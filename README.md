@@ -1,10 +1,17 @@
-# Journaling the Web
+# js-boilerplate
 
+A template to get started with a Javascript/Typescript project for backend and frontend.
+
+* [Typescript] - Static type checking
+* [Rollup] - Bundle several Javascript (ES6) modules into a single bundle.js file.
 * [npm] - Package manager
+* [Mithril] - Client-side MVC framework
+* [Express] - Server-side framework
+* [PaPaParse] - CSV parser (optional)
 
 ## Install dependencies
 
-Requires nodejs v7.6.0 or higher.
+Requires nodejs >= 6.0.
 
 ```
 cd js-boilerplate
