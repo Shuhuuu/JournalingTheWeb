@@ -1,0 +1,5 @@
+Infos fuer Shui
+
+Shift-Cursor-Down gleichzeitig druecken selektiert Text
+
+Cmd-Curson-Up/Down = PageUp/Down

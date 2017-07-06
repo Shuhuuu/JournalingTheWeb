@@ -57,11 +57,11 @@ function renderHeader() {
 function renderBody(news) {
     return <div class="cf">
   <div class="fl w-100 w-20-ns tc pv5 bg-black-05">
-    <h1 class="f1">Nachrichten</h1>
+    <h2 class="f3">Nachrichten</h2>
         { renderNews(news) }
   </div>
   <div class="fl w-100 w-20-ns tc pv5 bg-black-10">
-    Ratgeber
+    <h2 class="f3">Ratgeber</h2>
   </div>
   <div class="fl w-100 w-20-ns tc pv5 bg-black-20">
     Sport
